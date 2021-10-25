@@ -1,0 +1,967 @@
+{
+  "status": 0,
+  "message": "Success",
+  "data": {
+    "bookGoogle": {
+      "kind": "books#volumes",
+      "totalItems": 1048,
+      "items": [
+        {
+          "kind": "books#volume",
+          "id": "DJgZEAAAQBAJ",
+          "etag": "6bLIO9dRlxQ",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/DJgZEAAAQBAJ",
+          "volumeInfo": {
+            "title": "Desarrollo de aplicaciones mediante framework de spring",
+            "authors": [
+              "Eugenia Pérez Martínez"
+            ],
+            "publisher": "Ediciones de la U",
+            "publishedDate": "2021-02-02",
+            "description": "La edición empresarial de Java es una de las tecnologías de desarrollo más demandadas actualmente. Sin embargo, JEE ofrece solo un conjunto de herramientas básicas y se apoya en otros frameworks para poder crear proyectos sólidos cuyo mantenimiento sea lo más fácil posible. Spring es, sin duda, el framework por excelencia sobre el que se construyen aplicaciones empresariales en Java. Es una herramienta opensource capaz de integrarse con otros frameworks como Hibernate o Struts2 y que nos ofrece un marco ideal para que nuestras aplicaciones se desarrollen de forma limpia y cohesionada a través de técnicas como la inyección de dependencias o los aspectos. A través de este libro te introducirás en el framework Spring y en sus conceptos clave como la inversión de control. Partiendo de ejemplos simples irás descubriendo las distintas facetas de este framework con especial énfasis en el desarrollo de aplicaciones web y sin perder de vista la integración con Hibernate. También entra en detalles como la internacionalización o validación de formularios, entre otros, utilizando en todo momento Maven como herramienta de gestión de proyectos e introduciendo otras como git. Las explicaciones van acompañadas de proyectos de ejemplo muy prácticos que facilitan la comprensión de esta tecnología y permiten aplicarla en proyectos reales. Descubre el framework Spring. Aprende conceptos clave como la inversión de control. Descubre la programación orientada a aspectos. Aplica inyección de dependencias con XML o anotaciones. Desarrolla aplicaciones web MVC con Spring. Facilita la validación de formularios e internacionalización de aplicaciones. Integra Spring con Hibernate para acceder a bases de datos. Añade correo electrónico y acceso a colas de mensajes. Contiene material adicional con código.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9789587628210"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "9587628217"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 297,
+            "printType": "BOOK",
+            "categories": [
+              "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=DJgZEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=DJgZEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=DJgZEAAAQBAJ&pg=PA95&dq=spring&hl=&cd=1&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=DJgZEAAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=DJgZEAAAQBAJ",
+            "subtitle": "UNa panorámica del framework para J2EE más utilizado del momento"
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 279.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 279.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=DJgZEAAAQBAJ&rdid=book-DJgZEAAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 279000000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 279000000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": "http://books.google.com.mx/books/download/Desarrollo_de_aplicaciones_mediante_fram-sample-pdf.acsm?id=DJgZEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=DJgZEAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Crearemos un primer proyecto utilizando una de las plantillas que incluye Eclipse al tener el plugin <b>Spring</b> Tools instalado. Para ello hacemos clic en: New &gt; other &gt; <b>Spring</b> &gt; <b>Spring</b> project &gt; Simple <b>Spring</b> Web Maven Existe otra&nbsp;..."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "4BbfDQAAQBAJ",
+          "etag": "Va/n0So0wks",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/4BbfDQAAQBAJ",
+          "volumeInfo": {
+            "title": "Aprende a Desarrollar con Spring Framework",
+            "authors": [
+              "Gabriel Méndez González"
+            ],
+            "publisher": "IT Campus Academy",
+            "publishedDate": "2016-12-22",
+            "description": "Spring es un framework que da soporte al desarrollo de aplicaciones empresariales en Java, surgió como una alternativa ligera a la compleja plataforma J2EE, ganando muchísima popularidad entre los programadores. Spring nos proporciona una serie de características, entre las que tenemos que destacar la inyección de dependencias, la gestión de transacciones, el soporte para pruebas automatizadas y el soporte orientado a aspectos de programación. Spring Framework es un software libre, desarrollado por la Spring Source. Se puede utilizar en contenedores web, dispensando servidores de aplicaciones JEE como Glassfish y JBoss. También se puede utilizar para aplicaciones de escritorio. Para la mayoría de los escenarios a los que se enfrenta un desarrollador de software hoy en día, Spring es una alternativa muy flexible a la especificación JEE. Una de sus principales ventajas es la independencia de un contenedor JEE, facilitando el desarrollo y, principalmente, la realización de pruebas automatizadas.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781541157378"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1541157370"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 105,
+            "printType": "BOOK",
+            "categories": [
+              "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=4BbfDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=4BbfDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=4BbfDQAAQBAJ&pg=PA6&dq=spring&hl=&cd=2&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=4BbfDQAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=4BbfDQAAQBAJ",
+            "subtitle": "2ª Edición"
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 148.99,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 148.99,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=4BbfDQAAQBAJ&rdid=book-4BbfDQAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 148990000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 148990000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": null,
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=4BbfDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "<b>Spring</b> es un framework que da soporte al desarrollo de aplicaciones empresariales en Java, surgió como una alternativa ligera a la compleja plataforma J2EE, ganando muchísima popularidad entre los programadores."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "jEIdAgAAQBAJ",
+          "etag": "1ZwdiB7n9Ds",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/jEIdAgAAQBAJ",
+          "volumeInfo": {
+            "title": "Web Project Spring Java Revolutions",
+            "authors": [
+              "Sergio Rios"
+            ],
+            "publisher": "Sergio Rios",
+            "publishedDate": "2013-11-19",
+            "description": "Una aplicación web siempre debe de estar estructurada debidamente con arquitectura J2EE, es por ello que surge la necesidad de combinar varias tecnologías y unirlas con el objetivo de crear un producto final funcional y de calidad. En este libro explicaremos a detalle los componentes de una arquitectura J2EE, así como las capas en que se divide dicha arquitectura y como se integran perfectamente los módulos del famosísimo y muy utilizado a nivel mundial en diseño e implementación de desarrollos web empresariales Spring 3. Veremos a detalle los conceptos básicos de los diferentes módulos que hemos utilizado para el desarrollo de nuestro arquetipo con Spring 3.",
+            "industryIdentifiers": null,
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 121,
+            "printType": "BOOK",
+            "categories": [
+              "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "0.1.0.0.preview.1",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=jEIdAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=jEIdAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=jEIdAgAAQBAJ&pg=PT3&dq=spring&hl=&cd=3&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=jEIdAgAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=jEIdAgAAQBAJ",
+            "subtitle": "J2EE Architecture with Spring"
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 230.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 230.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=jEIdAgAAQBAJ&rdid=book-jEIdAgAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 230000000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 230000000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": "http://books.google.com.mx/books/download/Web_Project_Spring_Java_Revolutions-sample-pdf.acsm?id=jEIdAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=jEIdAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "<b>Spring</b> es una plataforma para el desarrollo de aplicaciones Java, con el que puedes crear una aplicación web J2EE completa, ya que cuenta con varios módulos que soportan la estructura completa de una arquitectura J2EE."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "N2AvBwAAQBAJ",
+          "etag": "lSALZ2K7THA",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/N2AvBwAAQBAJ",
+          "volumeInfo": {
+            "title": "JSF 2 + Hibernate 4 + Spring 4",
+            "authors": [
+              "Sergio Rios"
+            ],
+            "publisher": "Sergio Rios",
+            "publishedDate": "2015-03-12",
+            "description": "Saber integrar de una forma segura, confiable y robusta varias tecnologías Java EE no es una tarea fácil ni mucho menos, tampoco es una tarea imposible, pero es un hecho que dicha integración puede resultar compleja y confusa. En este libro aprenderemos a integrar JSF 2 + PrimeFaces 5 + Hibernate 4 + Spring 4 de una manera fácil y sencilla, explicaremos a detalle los componentes que hemos desarrollado en nuestros videos que tienes disponibles gratis en YouTube acerca de dichas tecnologías. Además añadiremos nuevas funcionalidades avanzadas que te explicaremos con lujo de detalle para que saques el máximo provecho de la compra de este libro. ¿No es suficiente? Aquí vas a aprender cómo crear una aplicación desde cero paso a paso con todas las tecnologías ya mencionadas y a entender cómo y para qué sirve cada tecnología y en cuales proyectos aplicarlos y en cuáles no. La teoría que viene en este libro no tiene nada que ver con lo que aprenderás en la práctica, al leer y ejecutar los pasos descritos en este libro te garantizamos que adquirirás un nivel amplio en los principales frameworks y tecnologías de Java EE.",
+            "industryIdentifiers": null,
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 165,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=N2AvBwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=N2AvBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=N2AvBwAAQBAJ&pg=PT116&dq=spring&hl=&cd=4&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=N2AvBwAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=N2AvBwAAQBAJ",
+            "subtitle": "PrimeFaces 5 with JAX-WS y EJB’S"
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 250.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 250.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=N2AvBwAAQBAJ&rdid=book-N2AvBwAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 250000000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 250000000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": "http://books.google.com.mx/books/download/JSF_2_+_Hibernate_4_+_Spring_4-sample-pdf.acsm?id=N2AvBwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=N2AvBwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "... xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/<b>spring</b>-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/<b>spring</b>-aop.xsd&nbsp;..."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "5IVOCgAAQBAJ",
+          "etag": "0anGjfqPiDg",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/5IVOCgAAQBAJ",
+          "volumeInfo": {
+            "title": "JSF 2 + Hibernate 4 + Spring 4 - Parte 2",
+            "authors": [
+              "Sergio Rios"
+            ],
+            "publisher": "Sergio Rios",
+            "publishedDate": null,
+            "description": "En este libro aprenderemos a integrar JSF 2 + PrimeFaces 5 + Hibernate 4 + Spring 4 de una manera fácil y sencilla, explicaremos a detalle los componentes que hemos desarrollado en nuestros videos que tienes disponibles gratis en YouTube acerca de dichas tecnologías. Además añadiremos nuevas funcionalidades avanzadas que te explicaremos con lujo de detalle para que saques el máximo provecho en la compra de este libro. En este libro hemos agregado algunas sorpresas que seguro serán de tu interés de tu agrado y que te servirán de mucho.",
+            "industryIdentifiers": null,
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 141,
+            "printType": "BOOK",
+            "categories": [
+              "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "0.1.1.0.preview.1",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=5IVOCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=5IVOCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=5IVOCgAAQBAJ&pg=PT73&dq=spring&hl=&cd=5&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=5IVOCgAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=5IVOCgAAQBAJ",
+            "subtitle": "PrimeFaces 5 with Web Services JAX-WS and EJB'S 3"
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 200.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 200.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=5IVOCgAAQBAJ&rdid=book-5IVOCgAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 200000000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 200000000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": "http://books.google.com.mx/books/download/JSF_2_+_Hibernate_4_+_Spring_4_Parte_2-sample-pdf.acsm?id=5IVOCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=5IVOCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "... xmlns:tx=&quot;http://www.springframework.org/schema/tx&quot; xmlns:util=&quot;http://www.springframework.org/schema/util&quot; xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/<b>spring</b>-beans.xsd&nbsp;..."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "wYZOCgAAQBAJ",
+          "etag": "FMJEfGKOjeI",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/wYZOCgAAQBAJ",
+          "volumeInfo": {
+            "title": "JSF 2 + Hibernate 4 + Spring 4 Second Part",
+            "authors": [
+              "Sergio Rios"
+            ],
+            "publisher": "Sergio Rios",
+            "publishedDate": null,
+            "description": "In this book we learn to integrate PrimeFaces JSF 2 + 4 + 5 + Hibernate Spring 4 in an easy and simple way, explain in detail the components that we have developed in our videos you have available for free on YouTube about these technologies. Also add new advanced features that will explain in great detail to bring out the most of buying this book. We also have surprises that will help you a lot and will be of your total professional interest.",
+            "industryIdentifiers": null,
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 141,
+            "printType": "BOOK",
+            "categories": [
+              "Computers"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=wYZOCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=wYZOCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=wYZOCgAAQBAJ&pg=PT71&dq=spring&hl=&cd=6&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=wYZOCgAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=wYZOCgAAQBAJ",
+            "subtitle": "With Web Services JAX-WS and EJB’S"
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 200.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 200.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=wYZOCgAAQBAJ&rdid=book-wYZOCgAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 200000000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 200000000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": "http://books.google.com.mx/books/download/JSF_2_+_Hibernate_4_+_Spring_4_Second_Pa-sample-pdf.acsm?id=wYZOCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=wYZOCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "... xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/<b>spring</b>-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/<b>spring</b>-aop.xsd&nbsp;..."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "V9OhRGdHNT8C",
+          "etag": "aSUyBasVBv4",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/V9OhRGdHNT8C",
+          "volumeInfo": {
+            "title": "Veamos la Primavera/Let's Look At Spring",
+            "authors": [
+              "Sarah L. Schuette"
+            ],
+            "publisher": "Capstone",
+            "publishedDate": "2008-08-01",
+            "description": "\"Simple text and photographs present what happens to the weather, animals, and plants in spring--in both English and Spanish\"--T.p. verso.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781429622899"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "142962289X"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 24,
+            "printType": "BOOK",
+            "categories": [
+              "Juvenile Nonfiction"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.0.2.0.preview.3",
+            "panelizationSummary": null,
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=V9OhRGdHNT8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=V9OhRGdHNT8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=V9OhRGdHNT8C&pg=PA2&dq=spring&hl=&cd=7&source=gbs_api",
+            "infoLink": "http://books.google.com.mx/books?id=V9OhRGdHNT8C&dq=spring&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Veamos_la_Primavera_Let_s_Look_At_Spring.html?hl=&id=V9OhRGdHNT8C",
+            "subtitle": null
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "NOT_FOR_SALE",
+            "listPrice": null,
+            "retailPrice": null,
+            "buyLink": null,
+            "offers": null,
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": null,
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=V9OhRGdHNT8C&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Printed in the United States of America 1 2 3 4 5 6 13 12 11 10 09 08 Library of Congress Cataloging-in-Publication Data Schuette, Sarah L., 1976– [Let&#39;s look at <b>spring</b>. Spanish &amp; English] Veamos la primavera / por Sarah L. Schuette&nbsp;..."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "JkaYCgAAQBAJ",
+          "etag": "QtzSFCMqks4",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/JkaYCgAAQBAJ",
+          "volumeInfo": {
+            "title": "Cold Spring",
+            "authors": [
+              "Bernadette Walsh"
+            ],
+            "publisher": "Babelcube Inc.",
+            "publishedDate": "2015-09-21",
+            "description": "Hace veinte años, Maura Lenihan fue la voluptuosa adolescente pelirroja en el centro de un escándalo político sexual. Hoy, Maura tiene treinta y cinco años y es una enfermera de hospicio que se pasa los días cuidando a los pacientes de cáncer avanzado y esos que están comatosos, y por las noches leyendo novelas de romance en un apartamento apagado, sin color, con solo un ficus moribundo de compañía. Su vida es aburrida y segura y es justo como ella la quiere. Sin embargo, ahora, el capullo seguro que ella se ha creado, está siendo amenazado tanto por el interés de la prensa en el escándalo de hace veinte años y por uno de sus pacientes más recientes—un banquero de inversiones en un banco de Wall Street, de treinta años, cuyo cabello negro y ojos azules les son extrañamente familiares. Género: Ficción para mujeres",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781507121085"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1507121083"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 141,
+            "printType": "BOOK",
+            "categories": [
+              "Fiction"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "1.9.8.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=JkaYCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=JkaYCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=JkaYCgAAQBAJ&pg=PT129&dq=spring&hl=&cd=8&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=JkaYCgAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=JkaYCgAAQBAJ",
+            "subtitle": null
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 102.58,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 102.58,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=JkaYCgAAQBAJ&rdid=book-JkaYCgAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 102580000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 102580000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": null,
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=JkaYCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Por primera vez no resistí cuando la fuerte corriente de la memoria me llevó hacia el pasado en Cold <b>Spring</b>. Kate Mannion había llamado a mi madre para decirle que no me iban a necesitar para cuidar niños ese sábado por la noche."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "EEPaDwAAQBAJ",
+          "etag": "lDtsGrGvOuU",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/EEPaDwAAQBAJ",
+          "volumeInfo": {
+            "title": "El viaje a Echo Spring",
+            "authors": [
+              "Olivia Laing"
+            ],
+            "publisher": "Ático de los Libros",
+            "publishedDate": "2020-03-31",
+            "description": "En El viaje a Echo Spring, Olivia Laing examina la relación entre creatividad y alcohol a través de las obras y la vida de seis escritores extraordinarios: F. Scott Fitzgerald, Ernest Hemingway, Tennessee Williams, John Berryman, John Cheever y Raymond Carver. Los seis escritores eran alcohólicos y la bebida asoma en sus páginas más conocidas, desde Un tranvía llamado Deseo a Suave es la noche, El nadador o París era una fiesta. A menudo bebían juntos: Hemingway y Fitzgerald iban de bar en bar por el París de los años veinte; y Carver y Cheever compartían borracheras en Iowa durante el frío invierno de 1973. Olivia Laing decide emprender un fascinante viaje literal y literario por la América de los creadores. Así, del Nueva York de Cheever a la Nueva Orleans de Williams, del Cayo Hueso de Hemingway hasta el Port Angeles de Carver, Laing construye un mapa topográfico del alcoholismo. Hermoso, cautivador y original, El viaje a Echo Spring, finalista del prestigioso Premio Costa, es una bella exploración sobre los misterios de la creatividad y las profundidades de la adicción. \"Un libro hermoso e impresionante.\" Nick Cave \"Uno de los mejores libros que he leído sobre la adversidad y el proceso de creación: asusta pero es perversamente atractivo.\" Hilary Mantel \"Una obra magnífica.\" Helen Macdonald, autora de H de halcón \"Sugerente e incisivo, es no ficción narrativa de la mejor categoría.\" The New York Times \"Olivia Laing escribe en la frontera entre la lírica, la melancolía y la alegría. Es magia. La seguiría hasta el mar.\" Philip Hoare, autor de Leviatán o la ballena \"Un libro excéntrico, apasionado, encantador y lleno de fantasmas, fruto de la belle-lettre... La historia que Laing teje posee la cualidad de un sueño.\" The Wall Street Journal",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9788417743772"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "8417743774"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 344,
+            "printType": "BOOK",
+            "categories": [
+              "Biography & Autobiography"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "1.3.3.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=EEPaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=EEPaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=EEPaDwAAQBAJ&pg=PT6&dq=spring&hl=&cd=9&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=EEPaDwAAQBAJ&source=gbs_api",
+            "canonicalVolumeLink": "https://play.google.com/store/books/details?id=EEPaDwAAQBAJ",
+            "subtitle": "Por qué beben los escritores"
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "FOR_SALE",
+            "listPrice": {
+              "amount": 169.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "retailPrice": {
+              "amount": 169.0,
+              "currencyCode": "MXN",
+              "amountInMicros": 0
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=EEPaDwAAQBAJ&rdid=book-EEPaDwAAQBAJ&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 169000000
+                },
+                "retailPrice": {
+                  "amount": 0.0,
+                  "currencyCode": "MXN",
+                  "amountInMicros": 169000000
+                },
+                "giftable": true
+              }
+            ],
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": "http://books.google.com.mx/books/download/El_viaje_a_Echo_Spring-sample-pdf.acsm?id=EEPaDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=EEPaDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "El viaje a Echo <b>Spring</b>, Olivia Laing examina la relación entre creatividad y alcohol a través de las obras y la vida de seis escritores extraordinarios: F. Scott Fitzgerald, Ernest Hemingway, Tennessee Williams, John Berryman,&nbsp;..."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "aGzLDwAAQBAJ",
+          "etag": "lFGZCq2G+hE",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/aGzLDwAAQBAJ",
+          "volumeInfo": {
+            "title": "Es primavera, querido dragón / It's Spring, Dear Dragon",
+            "authors": [
+              "Margaret Hillert"
+            ],
+            "publisher": "Norwood House Press",
+            "publishedDate": "2011-07-15",
+            "description": "A boy and his pet dragon play soccer with friends and learn that winning isn't everything. Some of our most popular New Dear Dragon books have been expertly translated for an English/Spanish edition. Perfect for an early introduction to Spanish or for ESL. Full-color illustrations.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781599534718"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1599534711"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 32,
+            "printType": "BOOK",
+            "categories": [
+              "Juvenile Fiction"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=aGzLDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=aGzLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "es",
+            "previewLink": "http://books.google.com.mx/books?id=aGzLDwAAQBAJ&pg=PA2&dq=spring&hl=&cd=10&source=gbs_api",
+            "infoLink": "http://books.google.com.mx/books?id=aGzLDwAAQBAJ&dq=spring&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Es_primavera_querido_drag%C3%B3n_It_s_Spring.html?hl=&id=aGzLDwAAQBAJ",
+            "subtitle": null
+          },
+          "saleInfo": {
+            "country": "MX",
+            "saleability": "NOT_FOR_SALE",
+            "listPrice": null,
+            "retailPrice": null,
+            "buyLink": null,
+            "offers": null,
+            "ebook": false
+          },
+          "accessInfo": {
+            "country": "MX",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "privateDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "downloadLink": null,
+              "available": false
+            },
+            "pdf": {
+              "acsTokenLink": null,
+              "downloadLink": null,
+              "available": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=aGzLDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "[?t s <b>spring</b>, dear dragon. Spanish &amp; English] Es primavera, guerido dragón 3 ?t s <b>spring</b>, dear dragon/por/by Margaret Hillert; ilustrado por/illustrated David Schimmell; [translated by Eida del Risco]. p. cm. ## (A beginning#to#read&nbsp;..."
+          }
+        }
+      ]
+    }
+  }
+}

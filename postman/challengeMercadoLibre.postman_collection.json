@@ -1,0 +1,1226 @@
+{
+	"info": {
+		"_postman_id": "704cff63-9b3f-4ba3-88cf-5d741b840589",
+		"name": "challengeMercadoLibre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\":\"jav\",\n    \"pwd\":\"123\"\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sign-up"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"jav\",\n    \"pwd\":\"123\"\n\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sign-up"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Oct 2021 00:24:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"Success\",\n    \"data\": {\n        \"userName\": \"jav\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "search-books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/search?title=spring",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "spring"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search-books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/books/search?title=spring",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"search"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "spring"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Oct 2021 00:24:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"Success\",\n    \"data\": {\n        \"bookGoogle\": {\n            \"kind\": \"books#volumes\",\n            \"totalItems\": 1033,\n            \"items\": [\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"DJgZEAAAQBAJ\",\n                    \"etag\": \"YRPsVhZXD8o\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/DJgZEAAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"Desarrollo de aplicaciones mediante framework de spring\",\n                        \"authors\": [\n                            \"Eugenia Pérez Martínez\"\n                        ],\n                        \"publisher\": \"Ediciones de la U\",\n                        \"publishedDate\": \"2021-02-02\",\n                        \"description\": \"La edición empresarial de Java es una de las tecnologías de desarrollo más demandadas actualmente. Sin embargo, JEE ofrece solo un conjunto de herramientas básicas y se apoya en otros frameworks para poder crear proyectos sólidos cuyo mantenimiento sea lo más fácil posible. Spring es, sin duda, el framework por excelencia sobre el que se construyen aplicaciones empresariales en Java. Es una herramienta opensource capaz de integrarse con otros frameworks como Hibernate o Struts2 y que nos ofrece un marco ideal para que nuestras aplicaciones se desarrollen de forma limpia y cohesionada a través de técnicas como la inyección de dependencias o los aspectos. A través de este libro te introducirás en el framework Spring y en sus conceptos clave como la inversión de control. Partiendo de ejemplos simples irás descubriendo las distintas facetas de este framework con especial énfasis en el desarrollo de aplicaciones web y sin perder de vista la integración con Hibernate. También entra en detalles como la internacionalización o validación de formularios, entre otros, utilizando en todo momento Maven como herramienta de gestión de proyectos e introduciendo otras como git. Las explicaciones van acompañadas de proyectos de ejemplo muy prácticos que facilitan la comprensión de esta tecnología y permiten aplicarla en proyectos reales. Descubre el framework Spring. Aprende conceptos clave como la inversión de control. Descubre la programación orientada a aspectos. Aplica inyección de dependencias con XML o anotaciones. Desarrolla aplicaciones web MVC con Spring. Facilita la validación de formularios e internacionalización de aplicaciones. Integra Spring con Hibernate para acceder a bases de datos. Añade correo electrónico y acceso a colas de mensajes. Contiene material adicional con código.\",\n                        \"industryIdentifiers\": [\n                            {\n                                \"type\": \"ISBN_13\",\n                                \"identifier\": \"9789587628210\"\n                            },\n                            {\n                                \"type\": \"ISBN_10\",\n                                \"identifier\": \"9587628217\"\n                            }\n                        ],\n                        \"readingModes\": {\n                            \"text\": false,\n                            \"image\": true\n                        },\n                        \"pageCount\": 297,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Computers\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": false,\n                        \"contentVersion\": \"preview-1.0.0\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=DJgZEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=DJgZEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=DJgZEAAAQBAJ&pg=PA95&dq=spring&hl=&cd=1&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=DJgZEAAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=DJgZEAAAQBAJ\",\n                        \"subtitle\": \"UNa panorámica del framework para J2EE más utilizado del momento\"\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 279,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 279,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=DJgZEAAAQBAJ&rdid=book-DJgZEAAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 279000000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 279000000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": \"http://books.google.com.mx/books/download/Desarrollo_de_aplicaciones_mediante_fram-sample-pdf.acsm?id=DJgZEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api\",\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=DJgZEAAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"Crearemos un primer proyecto utilizando una de las plantillas que incluye Eclipse al tener el plugin <b>Spring</b> Tools instalado. Para ello hacemos clic en: New &gt; other &gt; <b>Spring</b> &gt; <b>Spring</b> project &gt; Simple <b>Spring</b> Web Maven Existe otra&nbsp;...\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"4BbfDQAAQBAJ\",\n                    \"etag\": \"D7JDfdT9Y74\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/4BbfDQAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"Aprende a Desarrollar con Spring Framework\",\n                        \"authors\": [\n                            \"Gabriel Méndez González\"\n                        ],\n                        \"publisher\": \"IT Campus Academy\",\n                        \"publishedDate\": \"2016-12-22\",\n                        \"description\": \"Spring es un framework que da soporte al desarrollo de aplicaciones empresariales en Java, surgió como una alternativa ligera a la compleja plataforma J2EE, ganando muchísima popularidad entre los programadores. Spring nos proporciona una serie de características, entre las que tenemos que destacar la inyección de dependencias, la gestión de transacciones, el soporte para pruebas automatizadas y el soporte orientado a aspectos de programación. Spring Framework es un software libre, desarrollado por la Spring Source. Se puede utilizar en contenedores web, dispensando servidores de aplicaciones JEE como Glassfish y JBoss. También se puede utilizar para aplicaciones de escritorio. Para la mayoría de los escenarios a los que se enfrenta un desarrollador de software hoy en día, Spring es una alternativa muy flexible a la especificación JEE. Una de sus principales ventajas es la independencia de un contenedor JEE, facilitando el desarrollo y, principalmente, la realización de pruebas automatizadas.\",\n                        \"industryIdentifiers\": [\n                            {\n                                \"type\": \"ISBN_13\",\n                                \"identifier\": \"9781541157378\"\n                            },\n                            {\n                                \"type\": \"ISBN_10\",\n                                \"identifier\": \"1541157370\"\n                            }\n                        ],\n                        \"readingModes\": {\n                            \"text\": false,\n                            \"image\": true\n                        },\n                        \"pageCount\": 105,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Computers\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": true,\n                        \"contentVersion\": \"preview-1.0.0\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=4BbfDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=4BbfDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=4BbfDQAAQBAJ&pg=PA6&dq=spring&hl=&cd=2&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=4BbfDQAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=4BbfDQAAQBAJ\",\n                        \"subtitle\": \"2ª Edición\"\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 148.99,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 148.99,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=4BbfDQAAQBAJ&rdid=book-4BbfDQAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 148990000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 148990000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": null,\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=4BbfDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"<b>Spring</b> es un framework que da soporte al desarrollo de aplicaciones empresariales en Java, surgió como una alternativa ligera a la compleja plataforma J2EE, ganando muchísima popularidad entre los programadores.\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"jEIdAgAAQBAJ\",\n                    \"etag\": \"2rOqf+za3Es\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/jEIdAgAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"Web Project Spring Java Revolutions\",\n                        \"authors\": [\n                            \"Sergio Rios\"\n                        ],\n                        \"publisher\": \"Sergio Rios\",\n                        \"publishedDate\": \"2013-11-19\",\n                        \"description\": \"Una aplicación web siempre debe de estar estructurada debidamente con arquitectura J2EE, es por ello que surge la necesidad de combinar varias tecnologías y unirlas con el objetivo de crear un producto final funcional y de calidad. En este libro explicaremos a detalle los componentes de una arquitectura J2EE, así como las capas en que se divide dicha arquitectura y como se integran perfectamente los módulos del famosísimo y muy utilizado a nivel mundial en diseño e implementación de desarrollos web empresariales Spring 3. Veremos a detalle los conceptos básicos de los diferentes módulos que hemos utilizado para el desarrollo de nuestro arquetipo con Spring 3.\",\n                        \"industryIdentifiers\": null,\n                        \"readingModes\": {\n                            \"text\": false,\n                            \"image\": true\n                        },\n                        \"pageCount\": 121,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Computers\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": true,\n                        \"contentVersion\": \"0.1.0.0.preview.1\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=jEIdAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=jEIdAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=jEIdAgAAQBAJ&pg=PT3&dq=spring&hl=&cd=3&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=jEIdAgAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=jEIdAgAAQBAJ\",\n                        \"subtitle\": \"J2EE Architecture with Spring\"\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 230,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 230,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=jEIdAgAAQBAJ&rdid=book-jEIdAgAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 230000000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 230000000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": \"http://books.google.com.mx/books/download/Web_Project_Spring_Java_Revolutions-sample-pdf.acsm?id=jEIdAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api\",\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=jEIdAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"<b>Spring</b> es una plataforma para el desarrollo de aplicaciones Java, con el que puedes crear una aplicación web J2EE completa, ya que cuenta con varios módulos que soportan la estructura completa de una arquitectura J2EE.\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"N2AvBwAAQBAJ\",\n                    \"etag\": \"mBoVoH2OcrI\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/N2AvBwAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"JSF 2 + Hibernate 4 + Spring 4\",\n                        \"authors\": [\n                            \"Sergio Rios\"\n                        ],\n                        \"publisher\": \"Sergio Rios\",\n                        \"publishedDate\": \"2015-03-12\",\n                        \"description\": \"Saber integrar de una forma segura, confiable y robusta varias tecnologías Java EE no es una tarea fácil ni mucho menos, tampoco es una tarea imposible, pero es un hecho que dicha integración puede resultar compleja y confusa. En este libro aprenderemos a integrar JSF 2 + PrimeFaces 5 + Hibernate 4 + Spring 4 de una manera fácil y sencilla, explicaremos a detalle los componentes que hemos desarrollado en nuestros videos que tienes disponibles gratis en YouTube acerca de dichas tecnologías. Además añadiremos nuevas funcionalidades avanzadas que te explicaremos con lujo de detalle para que saques el máximo provecho de la compra de este libro. ¿No es suficiente? Aquí vas a aprender cómo crear una aplicación desde cero paso a paso con todas las tecnologías ya mencionadas y a entender cómo y para qué sirve cada tecnología y en cuales proyectos aplicarlos y en cuáles no. La teoría que viene en este libro no tiene nada que ver con lo que aprenderás en la práctica, al leer y ejecutar los pasos descritos en este libro te garantizamos que adquirirás un nivel amplio en los principales frameworks y tecnologías de Java EE.\",\n                        \"industryIdentifiers\": null,\n                        \"readingModes\": {\n                            \"text\": false,\n                            \"image\": true\n                        },\n                        \"pageCount\": 165,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Business & Economics\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": true,\n                        \"contentVersion\": \"preview-1.0.0\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=N2AvBwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=N2AvBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=N2AvBwAAQBAJ&pg=PT116&dq=spring&hl=&cd=4&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=N2AvBwAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=N2AvBwAAQBAJ\",\n                        \"subtitle\": \"PrimeFaces 5 with JAX-WS y EJB’S\"\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 250,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 250,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=N2AvBwAAQBAJ&rdid=book-N2AvBwAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 250000000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 250000000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": \"http://books.google.com.mx/books/download/JSF_2_+_Hibernate_4_+_Spring_4-sample-pdf.acsm?id=N2AvBwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api\",\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=N2AvBwAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"... xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/<b>spring</b>-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/<b>spring</b>-aop.xsd&nbsp;...\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"5IVOCgAAQBAJ\",\n                    \"etag\": \"0+yl1/MfShk\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/5IVOCgAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"JSF 2 + Hibernate 4 + Spring 4 - Parte 2\",\n                        \"authors\": [\n                            \"Sergio Rios\"\n                        ],\n                        \"publisher\": \"Sergio Rios\",\n                        \"publishedDate\": null,\n                        \"description\": \"En este libro aprenderemos a integrar JSF 2 + PrimeFaces 5 + Hibernate 4 + Spring 4 de una manera fácil y sencilla, explicaremos a detalle los componentes que hemos desarrollado en nuestros videos que tienes disponibles gratis en YouTube acerca de dichas tecnologías. Además añadiremos nuevas funcionalidades avanzadas que te explicaremos con lujo de detalle para que saques el máximo provecho en la compra de este libro. En este libro hemos agregado algunas sorpresas que seguro serán de tu interés de tu agrado y que te servirán de mucho.\",\n                        \"industryIdentifiers\": null,\n                        \"readingModes\": {\n                            \"text\": false,\n                            \"image\": true\n                        },\n                        \"pageCount\": 141,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Computers\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": true,\n                        \"contentVersion\": \"0.1.1.0.preview.1\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=5IVOCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=5IVOCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=5IVOCgAAQBAJ&pg=PT73&dq=spring&hl=&cd=5&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=5IVOCgAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=5IVOCgAAQBAJ\",\n                        \"subtitle\": \"PrimeFaces 5 with Web Services JAX-WS and EJB'S 3\"\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 200,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 200,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=5IVOCgAAQBAJ&rdid=book-5IVOCgAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 200000000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 200000000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": \"http://books.google.com.mx/books/download/JSF_2_+_Hibernate_4_+_Spring_4_Parte_2-sample-pdf.acsm?id=5IVOCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api\",\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=5IVOCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"... xmlns:tx=&quot;http://www.springframework.org/schema/tx&quot; xmlns:util=&quot;http://www.springframework.org/schema/util&quot; xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/<b>spring</b>-beans.xsd&nbsp;...\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"wYZOCgAAQBAJ\",\n                    \"etag\": \"tGeDuNmbJfc\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/wYZOCgAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"JSF 2 + Hibernate 4 + Spring 4 Second Part\",\n                        \"authors\": [\n                            \"Sergio Rios\"\n                        ],\n                        \"publisher\": \"Sergio Rios\",\n                        \"publishedDate\": null,\n                        \"description\": \"In this book we learn to integrate PrimeFaces JSF 2 + 4 + 5 + Hibernate Spring 4 in an easy and simple way, explain in detail the components that we have developed in our videos you have available for free on YouTube about these technologies. Also add new advanced features that will explain in great detail to bring out the most of buying this book. We also have surprises that will help you a lot and will be of your total professional interest.\",\n                        \"industryIdentifiers\": null,\n                        \"readingModes\": {\n                            \"text\": false,\n                            \"image\": true\n                        },\n                        \"pageCount\": 141,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Computers\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": false,\n                        \"contentVersion\": \"preview-1.0.0\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=wYZOCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=wYZOCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=wYZOCgAAQBAJ&pg=PT71&dq=spring&hl=&cd=6&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=wYZOCgAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=wYZOCgAAQBAJ\",\n                        \"subtitle\": \"With Web Services JAX-WS and EJB’S\"\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 200,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 200,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=wYZOCgAAQBAJ&rdid=book-wYZOCgAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 200000000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 200000000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": \"http://books.google.com.mx/books/download/JSF_2_+_Hibernate_4_+_Spring_4_Second_Pa-sample-pdf.acsm?id=wYZOCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api\",\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=wYZOCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"... xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/<b>spring</b>-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/<b>spring</b>-aop.xsd&nbsp;...\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"V9OhRGdHNT8C\",\n                    \"etag\": \"91WfDWbYMEI\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/V9OhRGdHNT8C\",\n                    \"volumeInfo\": {\n                        \"title\": \"Veamos la Primavera/Let's Look At Spring\",\n                        \"authors\": [\n                            \"Sarah L. Schuette\"\n                        ],\n                        \"publisher\": \"Capstone\",\n                        \"publishedDate\": \"2008-08-01\",\n                        \"description\": \"\\\"Simple text and photographs present what happens to the weather, animals, and plants in spring--in both English and Spanish\\\"--T.p. verso.\",\n                        \"industryIdentifiers\": [\n                            {\n                                \"type\": \"ISBN_13\",\n                                \"identifier\": \"9781429622899\"\n                            },\n                            {\n                                \"type\": \"ISBN_10\",\n                                \"identifier\": \"142962289X\"\n                            }\n                        ],\n                        \"readingModes\": {\n                            \"text\": true,\n                            \"image\": true\n                        },\n                        \"pageCount\": 24,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Juvenile Nonfiction\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": false,\n                        \"contentVersion\": \"0.0.2.0.preview.3\",\n                        \"panelizationSummary\": null,\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=V9OhRGdHNT8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=V9OhRGdHNT8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=V9OhRGdHNT8C&pg=PA2&dq=spring&hl=&cd=7&source=gbs_api\",\n                        \"infoLink\": \"http://books.google.com.mx/books?id=V9OhRGdHNT8C&dq=spring&hl=&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://books.google.com/books/about/Veamos_la_Primavera_Let_s_Look_At_Spring.html?hl=&id=V9OhRGdHNT8C\",\n                        \"subtitle\": null\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"NOT_FOR_SALE\",\n                        \"listPrice\": null,\n                        \"retailPrice\": null,\n                        \"buyLink\": null,\n                        \"offers\": null,\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": null,\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=V9OhRGdHNT8C&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"Printed in the United States of America 1 2 3 4 5 6 13 12 11 10 09 08 Library of Congress Cataloging-in-Publication Data Schuette, Sarah L., 1976– [Let&#39;s look at <b>spring</b>. Spanish &amp; English] Veamos la primavera / por Sarah L. Schuette&nbsp;...\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"JkaYCgAAQBAJ\",\n                    \"etag\": \"SQaupSK9jOo\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/JkaYCgAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"Cold Spring\",\n                        \"authors\": [\n                            \"Bernadette Walsh\"\n                        ],\n                        \"publisher\": \"Babelcube Inc.\",\n                        \"publishedDate\": \"2015-09-21\",\n                        \"description\": \"Hace veinte años, Maura Lenihan fue la voluptuosa adolescente pelirroja en el centro de un escándalo político sexual. Hoy, Maura tiene treinta y cinco años y es una enfermera de hospicio que se pasa los días cuidando a los pacientes de cáncer avanzado y esos que están comatosos, y por las noches leyendo novelas de romance en un apartamento apagado, sin color, con solo un ficus moribundo de compañía. Su vida es aburrida y segura y es justo como ella la quiere. Sin embargo, ahora, el capullo seguro que ella se ha creado, está siendo amenazado tanto por el interés de la prensa en el escándalo de hace veinte años y por uno de sus pacientes más recientes—un banquero de inversiones en un banco de Wall Street, de treinta años, cuyo cabello negro y ojos azules les son extrañamente familiares. Género: Ficción para mujeres\",\n                        \"industryIdentifiers\": [\n                            {\n                                \"type\": \"ISBN_13\",\n                                \"identifier\": \"9781507121085\"\n                            },\n                            {\n                                \"type\": \"ISBN_10\",\n                                \"identifier\": \"1507121083\"\n                            }\n                        ],\n                        \"readingModes\": {\n                            \"text\": true,\n                            \"image\": true\n                        },\n                        \"pageCount\": 141,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Fiction\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": false,\n                        \"contentVersion\": \"1.9.8.0.preview.3\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=JkaYCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=JkaYCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=JkaYCgAAQBAJ&pg=PT129&dq=spring&hl=&cd=8&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=JkaYCgAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=JkaYCgAAQBAJ\",\n                        \"subtitle\": null\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 102.58,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 102.58,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=JkaYCgAAQBAJ&rdid=book-JkaYCgAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 102580000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 102580000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": null,\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=JkaYCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"Por primera vez no resistí cuando la fuerte corriente de la memoria me llevó hacia el pasado en Cold <b>Spring</b>. Kate Mannion había llamado a mi madre para decirle que no me iban a necesitar para cuidar niños ese sábado por la noche.\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"EEPaDwAAQBAJ\",\n                    \"etag\": \"m0fu52n/taU\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/EEPaDwAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"El viaje a Echo Spring\",\n                        \"authors\": [\n                            \"Olivia Laing\"\n                        ],\n                        \"publisher\": \"Ático de los Libros\",\n                        \"publishedDate\": \"2020-03-31\",\n                        \"description\": \"En El viaje a Echo Spring, Olivia Laing examina la relación entre creatividad y alcohol a través de las obras y la vida de seis escritores extraordinarios: F. Scott Fitzgerald, Ernest Hemingway, Tennessee Williams, John Berryman, John Cheever y Raymond Carver. Los seis escritores eran alcohólicos y la bebida asoma en sus páginas más conocidas, desde Un tranvía llamado Deseo a Suave es la noche, El nadador o París era una fiesta. A menudo bebían juntos: Hemingway y Fitzgerald iban de bar en bar por el París de los años veinte; y Carver y Cheever compartían borracheras en Iowa durante el frío invierno de 1973. Olivia Laing decide emprender un fascinante viaje literal y literario por la América de los creadores. Así, del Nueva York de Cheever a la Nueva Orleans de Williams, del Cayo Hueso de Hemingway hasta el Port Angeles de Carver, Laing construye un mapa topográfico del alcoholismo. Hermoso, cautivador y original, El viaje a Echo Spring, finalista del prestigioso Premio Costa, es una bella exploración sobre los misterios de la creatividad y las profundidades de la adicción. \\\"Un libro hermoso e impresionante.\\\" Nick Cave \\\"Uno de los mejores libros que he leído sobre la adversidad y el proceso de creación: asusta pero es perversamente atractivo.\\\" Hilary Mantel \\\"Una obra magnífica.\\\" Helen Macdonald, autora de H de halcón \\\"Sugerente e incisivo, es no ficción narrativa de la mejor categoría.\\\" The New York Times \\\"Olivia Laing escribe en la frontera entre la lírica, la melancolía y la alegría. Es magia. La seguiría hasta el mar.\\\" Philip Hoare, autor de Leviatán o la ballena \\\"Un libro excéntrico, apasionado, encantador y lleno de fantasmas, fruto de la belle-lettre... La historia que Laing teje posee la cualidad de un sueño.\\\" The Wall Street Journal\",\n                        \"industryIdentifiers\": [\n                            {\n                                \"type\": \"ISBN_13\",\n                                \"identifier\": \"9788417743772\"\n                            },\n                            {\n                                \"type\": \"ISBN_10\",\n                                \"identifier\": \"8417743774\"\n                            }\n                        ],\n                        \"readingModes\": {\n                            \"text\": true,\n                            \"image\": true\n                        },\n                        \"pageCount\": 344,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Biography & Autobiography\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": false,\n                        \"contentVersion\": \"1.3.3.0.preview.3\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=EEPaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=EEPaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=EEPaDwAAQBAJ&pg=PT6&dq=spring&hl=&cd=9&source=gbs_api\",\n                        \"infoLink\": \"https://play.google.com/store/books/details?id=EEPaDwAAQBAJ&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://play.google.com/store/books/details?id=EEPaDwAAQBAJ\",\n                        \"subtitle\": \"Por qué beben los escritores\"\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"FOR_SALE\",\n                        \"listPrice\": {\n                            \"amount\": 169,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"retailPrice\": {\n                            \"amount\": 169,\n                            \"currencyCode\": \"MXN\",\n                            \"amountInMicros\": 0\n                        },\n                        \"buyLink\": \"https://play.google.com/store/books/details?id=EEPaDwAAQBAJ&rdid=book-EEPaDwAAQBAJ&rdot=1&source=gbs_api\",\n                        \"offers\": [\n                            {\n                                \"finskyOfferType\": 1,\n                                \"listPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 169000000\n                                },\n                                \"retailPrice\": {\n                                    \"amount\": 0,\n                                    \"currencyCode\": \"MXN\",\n                                    \"amountInMicros\": 169000000\n                                },\n                                \"giftable\": true\n                            }\n                        ],\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": \"http://books.google.com.mx/books/download/El_viaje_a_Echo_Spring-sample-pdf.acsm?id=EEPaDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api\",\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=EEPaDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"El viaje a Echo <b>Spring</b>, Olivia Laing examina la relación entre creatividad y alcohol a través de las obras y la vida de seis escritores extraordinarios: F. Scott Fitzgerald, Ernest Hemingway, Tennessee Williams, John Berryman,&nbsp;...\"\n                    }\n                },\n                {\n                    \"kind\": \"books#volume\",\n                    \"id\": \"aGzLDwAAQBAJ\",\n                    \"etag\": \"ntXbQ9UUQVQ\",\n                    \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/aGzLDwAAQBAJ\",\n                    \"volumeInfo\": {\n                        \"title\": \"Es primavera, querido dragón / It's Spring, Dear Dragon\",\n                        \"authors\": [\n                            \"Margaret Hillert\"\n                        ],\n                        \"publisher\": \"Norwood House Press\",\n                        \"publishedDate\": \"2011-07-15\",\n                        \"description\": \"A boy and his pet dragon play soccer with friends and learn that winning isn't everything. Some of our most popular New Dear Dragon books have been expertly translated for an English/Spanish edition. Perfect for an early introduction to Spanish or for ESL. Full-color illustrations.\",\n                        \"industryIdentifiers\": [\n                            {\n                                \"type\": \"ISBN_13\",\n                                \"identifier\": \"9781599534718\"\n                            },\n                            {\n                                \"type\": \"ISBN_10\",\n                                \"identifier\": \"1599534711\"\n                            }\n                        ],\n                        \"readingModes\": {\n                            \"text\": false,\n                            \"image\": true\n                        },\n                        \"pageCount\": 32,\n                        \"printType\": \"BOOK\",\n                        \"categories\": [\n                            \"Juvenile Fiction\"\n                        ],\n                        \"maturityRating\": \"NOT_MATURE\",\n                        \"allowAnonLogging\": false,\n                        \"contentVersion\": \"preview-1.0.0\",\n                        \"panelizationSummary\": {\n                            \"containsEpubBubbles\": false,\n                            \"containsImageBubbles\": false\n                        },\n                        \"imageLinks\": {\n                            \"smallThumbnail\": \"http://books.google.com/books/content?id=aGzLDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api\",\n                            \"thumbnail\": \"http://books.google.com/books/content?id=aGzLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n                        },\n                        \"language\": \"es\",\n                        \"previewLink\": \"http://books.google.com.mx/books?id=aGzLDwAAQBAJ&pg=PA2&dq=spring&hl=&cd=10&source=gbs_api\",\n                        \"infoLink\": \"http://books.google.com.mx/books?id=aGzLDwAAQBAJ&dq=spring&hl=&source=gbs_api\",\n                        \"canonicalVolumeLink\": \"https://books.google.com/books/about/Es_primavera_querido_drag%C3%B3n_It_s_Spring.html?hl=&id=aGzLDwAAQBAJ\",\n                        \"subtitle\": null\n                    },\n                    \"saleInfo\": {\n                        \"country\": \"MX\",\n                        \"saleability\": \"NOT_FOR_SALE\",\n                        \"listPrice\": null,\n                        \"retailPrice\": null,\n                        \"buyLink\": null,\n                        \"offers\": null,\n                        \"ebook\": false\n                    },\n                    \"accessInfo\": {\n                        \"country\": \"MX\",\n                        \"viewability\": \"PARTIAL\",\n                        \"embeddable\": true,\n                        \"privateDomain\": false,\n                        \"textToSpeechPermission\": \"ALLOWED\",\n                        \"epub\": {\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"pdf\": {\n                            \"acsTokenLink\": null,\n                            \"downloadLink\": null,\n                            \"available\": false\n                        },\n                        \"webReaderLink\": \"http://play.google.com/books/reader?id=aGzLDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api\",\n                        \"accessViewStatus\": \"SAMPLE\",\n                        \"quoteSharingAllowed\": false\n                    },\n                    \"searchInfo\": {\n                        \"textSnippet\": \"[?t s <b>spring</b>, dear dragon. Spanish &amp; English] Es primavera, guerido dragón 3 ?t s <b>spring</b>, dear dragon/por/by Margaret Hillert; ilustrado por/illustrated David Schimmell; [translated by Eida del Risco]. p. cm. ## (A beginning#to#read&nbsp;...\"\n                    }\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create-wish-list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/wish-list/list1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wish-list",
+						"list1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-wish-list",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/wish-list/list1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"wish-list",
+								"list1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Oct 2021 00:24:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"Success\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "delete-wish-list",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/wish-list/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wish-list",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete-wish-list",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/wish-list/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"wish-list",
+								"2"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Oct 2021 19:02:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 409,\n    \"message\": \"La lista proporcionada no existe.\\n Favor de validar.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getAll-wish-list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/wish-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wish-list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAll-wish-list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/wish-list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"wish-list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Oct 2021 19:02:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"Success\",\n    \"data\": {\n        \"wishList\": [\n            {\n                \"nameList\": \"list1\",\n                \"id\": 1\n            },\n            {\n                \"nameList\": \"list3\",\n                \"id\": 3\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create-wish-item-list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cantidad\":1,\n    \"idBook\":\"DJgZEAAAQBAJ\",\n    \"idWishList\":1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/wish-list/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wish-list",
+						"item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-wish-item-list",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cantidad\":1,\n    \"idBook\":\"DJgZEAAAQBAJ\",\n    \"idWishList\":1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/wish-list/item",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"wish-list",
+								"item"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Oct 2021 18:41:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"Success\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get-wish-item-list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/wish-list/item/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wish-list",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-wish-item-list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/wish-list/item/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"wish-list",
+								"item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Oct 2021 18:42:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"Success\",\n    \"data\": {\n        \"listWishItem\": [\n            {\n                \"id\": 4,\n                \"idBook\": \"DJgZEAAAQBAJ\",\n                \"cantidad\": 1\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete-wish-item-list",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n    \"idBook\":\"DJgZEAAAQBAJQ\",\n    \"idWishList\":1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/wish-list/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wish-list",
+						"item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete-wish-item-list",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"idBook\":\"DJgZEAAAQBAJQ\",\n    \"idWishList\":1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/wish-list/item",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"wish-list",
+								"item"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Oct 2021 18:42:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 0,\n    \"message\": \"Success\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json = JSON.parse(responseBody);",
+							"pm.environment.set(\"token\", 'Bearer ' + json.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "appclient",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "jav",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "jav",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/oauth/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Oct 2021 00:24:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzUxMjUwNjgsInVzZXJfbmFtZSI6ImphdiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI1MDQwOGZiZC0yZDY4LTRjOTItYTdiMS0yZWIwMTA5YjYwMTIiLCJjbGllbnRfaWQiOiJhcHBjbGllbnQiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.GcSCu1zsW-4zNniE7HXP0BeGpYYO9djv1pjlmfYyjbU\",\n    \"token_type\": \"bearer\",\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqYXYiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXRpIjoiNTA0MDhmYmQtMmQ2OC00YzkyLWE3YjEtMmViMDEwOWI2MDEyIiwiZXhwIjoxNjM1MTI1MDY4LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiMGY1YjBkOGUtMDZmNC00MjBkLThhZTQtOGU3M2EyMmEyN2E3IiwiY2xpZW50X2lkIjoiYXBwY2xpZW50In0.3x-uEDFO3_LsuEgiRlG4ZcKdm_MLxu08pdqjIERUCsc\",\n    \"expires_in\": 3599,\n    \"scope\": \"read write\",\n    \"jti\": \"50408fbd-2d68-4c92-a7b1-2eb0109b6012\"\n}"
+				}
+			]
+		}
+	]
+}

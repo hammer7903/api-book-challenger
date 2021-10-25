@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:booksdb
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8080
+config:
+  security:
+   oauth:
+    client:
+     id: appclient
+     secret: $2a$10$asX1EC8h77OS3Dk3pFGQrOV76T6tN0kY55ZfB1FeztafUnRC.G3NS
+    jwt:
+     key: code_signature_jwt_app_client
+url:
+  google:
+    book: https://www.googleapis.com/books/v1/volumes
